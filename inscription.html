@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+  	
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<link rel="stylesheet" href="style.css" />
+		<title>Inscription</title>
+	</head>
+	
+	<style>
+
+	.btn 
+	{
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+	margin-top: 25px;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+  }
+
+.btn:not(:disabled):not(.disabled) {
+    cursor: pointer;
+}
+
+		.btn-primary 
+		{
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;      
+		}
+
+		.btn-success {
+    color: #fff;
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+.btn-warning {
+    color: #212529;
+    background-color: #ffc107;
+    border-color: #ffc107;
+}
+	</style>
+
+	<body>
+
+		<div class="container">
+
+			<header>
+				<div class="titre">
+					<h1>Bienvenue sur ma page web</h1>
+				</div>
+			</header>
+	
+			<section id="box">
+
+				<div class="leftbox">
+					<ul>
+						<li>
+							<a href="Acceuil.html">Acceuil</a>
+						</li>	<br>
+
+						<li>
+							<a href="cv.html">Mon cv</a>
+						</li>	<br>
+
+						<li>
+							<a href="presentation.html">Presentation</a>
+						</li>	<br>
+
+						<li>
+							<a href="inscription.html">Inscription</a>
+						</li>
+					</ul>
+	
+				</div>
+
+				<div class="rightbox">
+					<fieldset class="etatCivil">
+
+						<legend> <h3> Etat Civil </h3> </legend>
+							<label for="nom"> Nom </label>
+								<input id="nom" type="text" name="nom" placeholder="Votre nom" required/>
+									<br>    
+										<br>
+							<label for="prénom"> Prénom </label>
+							   <input id="prénom" type="text" name="prénom" placeholder="Votre prénom" required/>
+	
+					</fieldset>
+
+					<fieldset class="coordonnees">
+						<legend> <h3> Coordonnées </h3> </legend>
+							<label for="mail"> Adresse électronique </label>
+								<input id="mail" type="email" name="mail" placeholder="Votre mail" required/>
+									<br>
+										<br>
+							<label for="password">Mot de passe</label>
+								<input id="password" type="password" name="password" placeholder="Votre mot de passe" required/>
+									<br/>
+										<br>
+							<label for="photo">Photo</label>
+								<input type="file" name="photo" id="photo"/>
+					</fieldset>
+
+						<br>
+						<p>     
+							<em><strong>Sexe</strong></em></br>
+							<input type="radio"  name="Sexe" value="homme" id="homme" /> <label for="homme">homme</label><br/>
+							<input type="radio" name="Sexe" value="femme" id="femme" /> <label for="femme">femme</label><br/>
+						</p>
+						<p>
+							<em><strong>Nationalité</strong></em></br>
+							<select name="pays" id="pays">
+								<option value="bénin">Béninoise</option>
+								<option value="cote d'ivoire">Ivoirienne</option>
+								<option value="cameroon">Cameroonaise</option>
+								<option value="Congo">Congolaise</option>
+								<option value="Maroc">Marocaine</option>
+								<option value="Sénégal">Sénégalaise</option>
+								<option value="Burkina Faso">Burkinabè</option>
+								<option value="Niger">Nigérien</option>
+								<option value="Ethiopie">Ethiopienne</option>
+								<option value="Rwanda">Rwandais</option>
+								<option value="Togo">Togolaise</option>
+							</select>
+						</p></br>
+						</fieldset>
+						<p>
+						<fieldset>
+							<legend><h2><em>Informations</em></h2></legend>
+							<em class="status"><u>Status</u></em><br>
+							<input type="checkbox" name="étudiant" id="étudiant"/><label for="étudiant">Etudiant</label></br>
+							<input type="checkbox" name="demandeur" id="demandeur"/><label for="demandeur">Demandeur d'emplois</label></br>
+							<input type="checkbox" name="travailleur" id="travailleur"/><label for="travailleur">Travailleur</label></br>
+							<input type="checkbox" name="non defini" id="non defini"/><label for="non defini">Non defini</label></br>
+							<em class="voeux"><u>voeux</u></em><br>
+							<input type="radio" name="souhait" value="riche" id="riche"/><label for="riche">Etre riche</label><br>
+							<input type="radio" name="souhait" value="celebre" id="celebre"/><label for="celebre">Etre célèbre</label><br>
+							<input type="radio" name="souhait" value="intelligent" id="intelligent"/><label for="intelligent">Etre <strong>encore</strong> plus intelligent</label><br>
+							<input type="radio" name="souhait" value="roi des pirates" id="roi des pirates"/> <label for="roi des pirates"><strong>Devenir Roi des pirates</strong></label><br>
+							<input type="radio" name="souhait" value="autre" id="autre"/> <label for="autre">Autre...</label><br>
+						</fieldset> 
+						</p>   
+						<p>
+						<fieldset>
+						<legend><h2><em>Coordonnées</em></h2></legend>
+						<label for="email">Adresse électronique</label>
+						<input type="email" name="email" id="email" required/>
+						<label for="tel">Téléphone</label>
+						<input type="tel" name="tel" id="tel" required/>
+						</fieldset>
+						</p>
+					</form>
+					
+					<input type="submit" value="Envoyer"/>
+					<input type="reset" value="Effacer">  
+					<input type="button" value="Quitter">      
+			
+	
+				</div>
+
+			</section>
+
+		</div>
+	
+	</body>
+
+</html>

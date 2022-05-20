@@ -1,0 +1,56 @@
+.titre h1
+{
+	text-transform: uppercase;
+	text-align: center;
+	border: 1px solid black;
+	/* width: 40%;
+	position: absolute;
+			top: 40px;
+			left: 35%; */
+}
+
+.leftbox
+{
+	border: 1px solid red;
+	display: inline-block; 
+	text-align: center;
+	position: fixed;
+			top: 255px;
+
+}
+
+.leftbox ul li
+{
+	list-style: none;
+	padding: 10px;
+	font-size: 18px;
+	/* border: 1px solid black; */
+	/* display: inline-block;  */
+}
+
+.leftbox ul li a
+{
+	text-decoration: none;
+	color: navy;
+}
+
+.rightbox
+{
+	text-align: center;
+	background-color: azure;
+	border: 1px solid greenyellow;
+	position: absolute;
+			top: 25%;
+			left: 18%;
+			right: 10%;
+}
+
+.rightbox p
+{
+	font-size: 18px;
+}
+
+.rightbox h3
+{
+	text-decoration: underline;
+}
